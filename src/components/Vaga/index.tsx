@@ -1,4 +1,5 @@
-import { LinkAnuncio, TitleAnuncioDaVaga, VagasAnuncio } from './styles'
+import { TitleAnuncioDaVaga, VagasAnuncio } from './styles'
+import { LinkAnuncio } from './styles'
 
 type Props = {
   titulo: string
