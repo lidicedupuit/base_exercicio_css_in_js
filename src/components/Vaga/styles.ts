@@ -1,37 +1,33 @@
 import styled from 'styled-components'
 
-export const VagasAnuncio = styled.li`
-  border: 1px solid ${(props) => props.theme.corPrincipal};
-  background-color: ${(props) => props.theme.corSecundaria};
-  color: ${(props) => props.theme.corPrincipal};
+export const Lista = styled.li`
+  border: 1px solid var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
   padding: 16px;
   transition: all ease 0.3s;
   border-radius: 8px;
 
   :hover {
-    background-color: ${(props) => props.theme.corPrincipal};
-    color: ${(props) => props.theme.corSecundaria};
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
 
     a {
-      border-color: ${(props) => props.theme.corPrincipal};
-      background-color: ${(props) => props.theme.corSecundaria};
-      color: ${(props) => props.theme.corPrincipal};
+      border-color: var(--cor-principal);
+      background-color: var(--cor-secundaria);
+      color: var(--cor-principal);
+      transition: all ease 0.3s;
     }
   }
-
-  li {
-    list-style: none;
-  }
 `
-export const TitleAnuncioDaVaga = styled.h3`
+export const VagaTitulo = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
-
-export const LinkAnuncio = styled.a`
-  border-color: ${(props) => props.theme.corSecundaria};
-  background-color: ${(props) => props.theme.corPrincipal};
-  color: ${(props) => props.theme.corSecundaria};
+export const VagaLink = styled.a`
+  border-color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
   display: inline-block;
   padding: 8px 16px;
   text-decoration: none;
