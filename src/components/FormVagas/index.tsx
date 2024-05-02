@@ -1,7 +1,9 @@
+import React from 'react'
 import { FormEvent, useState } from 'react'
-import { Button, Formulario, Input } from './styles'
+import { Formulario, Input, Button } from './styles'
 
-type Props = {
+
+export type Props = {
   aoPesquisar: (termo: string) => void
 }
 
@@ -12,15 +14,16 @@ const FormVagas = ({ aoPesquisar }: Props) => {
     e.preventDefault()
     aoPesquisar(termo.toLocaleLowerCase())
   }
-
-  return (
-    <Formulario onSubmit={aoEnviarForm}>
+   return (
+      <Formulario as="form"
+      onSubmit={aoEnviarForm}>
       <Input
+        as="input"
         placeholder="Front-end, fullstack, node, design"
         onChange={(e) => setTermo(e.target.value)}
         type="search"
       />
-      <Button type="submit">Pesquisar</Button>
+     <Button as="button" type="submit">Pesquisar</Button>
     </Formulario>
   )
 }

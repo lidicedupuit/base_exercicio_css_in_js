@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CabecalhoStyle = styled.header`
+export const header = styled.header`
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
   text-align: center;

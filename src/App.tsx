@@ -1,19 +1,20 @@
-import Header from './components/Cabecalho'
+import React from 'react'
 import Hero from './components/Hero'
 import ListaVagas from './containers/ListaVagas'
-import EstiloGlobal from './global'
-import Container from './components/Hero/styles'
+
+import './global.css'
+
 
 function App() {
   return (
     <>
-      <EstiloGlobal />
-      <Header />
-      <Hero />
-      <Container/>
+      <header> Ebac Jobs </header>
+      <Hero> As melhores vagas para tecnologia, design e artes visuais.</Hero>
+      <div className="containers">
       <ListaVagas />
+     </div>
     </>
   )
-}
 
+}
 export default App

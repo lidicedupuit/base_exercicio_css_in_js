@@ -9,10 +9,6 @@ export const Formulario = styled.form`
   margin-top: 40px;
 `
 
-export const Input = styled.input`
-  padding: 0 16px;
-  outline-color: var(--cor-principal);
-`
 export const Button = styled.button`
   background-color: var(--cor-principal);
   border: 1px solid var(--cor-principal);
@@ -22,4 +18,8 @@ export const Button = styled.button`
   color: var(--cor-secundaria);
   margin-left: 8px;
   cursor: pointer;
+`
+export const Input = styled.input`
+  padding: 0 16px;
+  outline-color: var(--cor-principal);
 `

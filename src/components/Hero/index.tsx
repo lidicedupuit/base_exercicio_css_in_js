@@ -1,15 +1,15 @@
-import { Container } from '../../global'
+import React from 'react'
 import { DivContainer, Formulario, HeroTitle } from './styles'
 
-const Hero = () => (
+type Props ={
+  children: string
+ }
+
+const Hero = (props:Props) => (
   <Formulario>
-    <Container>
-      <DivContainer>
-        <HeroTitle>
-          As melhores vagas para tecnologia, design e artes visuais.
-        </HeroTitle>
-      </DivContainer>
-    </Container>
+    <DivContainer>
+    <HeroTitle>{props.children}</HeroTitle>
+    </DivContainer>
   </Formulario>
 )
 

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Lista, VagaLink, VagaTitulo } from './styles'
 
 type Props = {
@@ -8,6 +9,7 @@ type Props = {
   salarioMin: number
   salarioMax: number
   requisitos: string[]
+  href?: string
 }
 
 const Vaga = (props: Props) => (
@@ -22,7 +24,8 @@ const Vaga = (props: Props) => (
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
-    <VagaLink href="#">Ver detalhes e candidatar-se</VagaLink>
+
+    <VagaLink as="a" href="#">Ver detalhes e candidatar-se</VagaLink>
   </Lista>
 )
 
