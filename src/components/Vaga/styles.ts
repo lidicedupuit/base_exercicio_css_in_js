@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Lista = styled.li`
-  border: 1px solid var(--cor-principal);
-  background-color: var(--cor-secundaria);
-  color: var(--cor-principal);
+  border: 1px solid ${(props) => props.theme.corPrincipal};
+  background-color: ${(props) => props.theme.corSecundaria};
+  color: ${(props) => props.theme.corPrincipal};
   padding: 16px;
   transition: all ease 0.3s;
   border-radius: 8px;
