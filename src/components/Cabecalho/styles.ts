@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const StyleHeader = styled.header`
+export const header = styled.header`
   background-color: ${(props) => props.theme.corSecundaria};
   color: ${(props) => props.theme.corPrincipal};
   text-align: center;
   padding: 24px 0;
-`
+`;

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Formulario = styled.form`
+export const Form = styled.form`
   height: 360px;
   width: 100%;
   background-image: url('https://cdn.pixabay.com/photo/2018/08/10/15/45/woman-3597101_1280.jpg');
@@ -32,12 +32,29 @@ export const Formulario = styled.form`
     padding: 24px 0;
 
     div {
+<<<<<<< HEAD
       font-size:32px;
+=======
+      font-size: 32px;
+>>>>>>> 3befbc66ded96e0255b6d8ae8e24ed75bfeee72b
     }
   }
 `
-
-export const HeroTitle = styled.h2`
+export const H2Title = styled.h2`
   font-family: Gloock, serif;
   font-size: 48px;
+`
+export const DivContainer = styled.h2`
+  font-family: Gloock, serif;
+  font-size: 48px;
+<<<<<<< HEAD
+=======
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+`
+
+
+>>>>>>> 3befbc66ded96e0255b6d8ae8e24ed75bfeee72b
 `
